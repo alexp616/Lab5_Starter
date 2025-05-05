@@ -29,7 +29,7 @@ function init() {
     }
   });
 
-  volumeSlider.addEventListener("change", () => {
+  volumeSlider.addEventListener("input", () => {
     volume = volumeSlider.value;
     if (volume == 0) {
       volumeIcon.src = `assets/icons/volume-level-0.svg`;
